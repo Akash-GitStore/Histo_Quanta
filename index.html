@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Histo Quanta</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f5f6fa;
+        color: #333;
+        padding: 0 15px;
+        line-height: 1.5;
+    }
+
+    /* Header / Logo */
+    .header {
+        text-align: center;
+        padding: 30px 0 10px;
+        border-bottom: 3px solid #F5F6FA;
+        margin-bottom: 20px;
+    }
+    .header img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+    .header h1 {
+        font-size: 1.8rem;
+        color: #004d40;
+        margin: 0;
+    }
+
+    /* Section Title */
+    .section-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 20px 0 10px;
+        color: #00695c;
+    }
+
+    /* Table styles */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+    th, td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 0.95rem;
+    }
+    th {
+        background-color: #009688;
+        color: white;
+    }
+
+    /* Inference Box */
+    .inference {
+        margin-top: 10px;
+        padding: 10px;
+        background: #e0f2f1;
+        border-left: 4px solid #009688;
+        font-size: 0.9rem;
+    }
+</style>
+</head>
+<body>
+
+<!-- Logo + App Name -->
+<div class="header">  
+</div>
+
+<div>
+    <img src="img/Img1.jpg" alt="App Logo" style="width:300px; height:300px;">
+</div>
+
+<!-- Hormonal receptor scoring -->
+<div>
+    <div class="section-title">1. Estrogen / Progesterone Receptor (Allred Score)</div>
+    <table>
+        <tr>
+            <th>Proportion Score</th>
+            <th>Intensity Score</th>
+            <th>Total Score</th>
+        </tr>
+        <tr><td>0</td><td>0</td><td>-</td></tr>
+        <tr><td>1</td><td>1</td><td>-</td></tr>
+        <tr><td>2</td><td>2</td><td>-</td></tr>
+        <tr><td>3</td><td>3</td><td>-</td></tr>
+        <tr><td>4</td><td>-</td><td>-</td></tr>
+        <tr><td>5</td><td>-</td><td>-</td></tr>
+    </table>
+    <div class="inference">
+        <strong>Total Score = Proportion Score + Intensity Score</strong><br>
+        ER positive: Score 3–8
+    </div>
+</div>
+
+<!-- HER2 scoring -->
+<div>
+    <div class="section-title">2. HER2 Scoring for Breast Carcinoma</div>
+    <table>
+        <tr>
+            <th>Results</th>
+            <th>Scoring</th>
+            <th>Obtained Intensity</th>
+        </tr>
+        <tr><td>Negative</td><td>0 / 1+</td><td>-</td></tr>
+        <tr><td>Equivocal</td><td>2+</td><td>-</td></tr>
+        <tr><td>Positive</td><td>3+</td><td>-</td></tr>
+    </table>
+</div>
+
+</body>
+</html>
